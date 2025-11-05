@@ -13,9 +13,9 @@ const app = express();
 app.use(express.json());
 app.use(clerkMiddleware());
 
-app.get("/debug-sentry", (req, res) => {
-  throw new Error("First sentry error!");
-});
+// app.get("/debug-sentry", (req, res) => {
+//   throw new Error("First sentry error!");
+// });
 
 app.get("/", (req, res) => {
   res.send("Hello World123!");
